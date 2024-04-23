@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Delusion Calculator Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #2C1B82;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2C1B82;
+            background-color: #40CD7D;
+            max-width: 500px;
+        }
+
+        .section {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #40CD7D;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #2C1B82;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Choices Taken</h2>
+        <p>Age Group: {{ age_group }}</p>
+        <p>Marital Status: {{ marital_status }}</p>
+        <p>Religion: {{ religion }}</p>
+        <p>Wealth Status (NFHS): {{ wealth_status }}</p>
+        <p>Minimum Height: {{ min_height }} cm</p>
+    </div>
+
+    <div class="section">
+        <h2>Result</h2>
+        <p class="result">The probability of fulfilling the criteria is: {{ result }}%</p>
+    </div>
+</body>
+</html>

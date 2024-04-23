@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Delusion Calculator Result</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #322D40;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #322D40;
+            background-color: #A1848C;
+            max-width: 500px;
+        }
+
+        .section {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #A1848C;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #322D40;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+  <center>
+  <h1>Results</h1>
+  
+  <img src="/static/r1.jpg" width="450" height= "450" >
+  </center>
+    <div class="section">
+      <h1>Your Dream Man</h1>
+      <p>Age Group: {{ age }}</p>
+      <p>Religion: {{ religion }}</p>
+      <p>Minimum Wealth Status: {{ wealth }}</p>
+      <p>Minimum Height: {{ min_height }}</p>
+      
+  
+    </div>
+
+    <div class="section">
+        <h2>Result</h2>
+        <p class="result">The probability of fulfilling the criteria is: {{ result }}%</p>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Delusion Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #9D96AC;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #322D40;
+            background-color: #A1848C;
+            max-width: 500px;
+            
+        }
+        img {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #A1848C;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #322D40;
+        }
+
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #8D73B6;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #min_height {
+        width: 400px; 
+        }
+        input[type="submit"]:hover {
+            background-color: #5a2ea1;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Female Delusion Calculator India</h1>
+    </center>
+    <center>
+    <img  src="test2.jpg"  width="450" height="450" > 
+    </center>
+
+    <form action="/calculate" method="POST">
+        <label for="age_input">Age Group:</label>
+        <select name="age_input" id="age_input">
+            <option value="15-19">15-19</option>
+            <option value="20-24">20-24</option>
+            <option value="25-29">25-29</option>
+            <option value="30-34">30-34</option>
+            <option value="35-39">35-39</option>
+            <option value="40-44">40-44</option>
+            <option value="45-49">45-49</option>
+            <option value="50-54">50-54</option>
+            <option value="55-59">55-59</option>
+            <option value="60-64">60-64</option>
+            <option value="65-69">65-69</option>
+            <option value="70-74">70-74</option>
+            <option value="75-79">75-79</option>
+            <option value="80+">80+</option>
+        </select>
+       
+         <class="form-group">
+        <input type="checkbox" id="marital_status" name="marital_status" value="exclude_married"> Exclude Married
+        <br>
+        <label for="religion_input">Religion:</label>
+        <select name="religion_input" id="religion_input">
+            <option value="All">All</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+            <option value="Sikh">Sikh</option>
+            <option value="Buddh">Buddhist</option>
+            <option value="Jain">Jain</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="wealth_input">Minimum Wealth Status (NFHS):</label>
+        <select name="wealth_input" id="wealth_input">
+            <option value="Poorest">Poorest</option>
+            <option value="Poorer">Poorer</option>
+            <option value="Middle">Middle</option>
+            <option value="Richer">Richer</option>
+            <option value="Richest">Richest</option>
+        </select>
+        <br><br>
+
+        <label for="min_height">Minimum Height (in cm):</label>
+        <input type="range" name="min_height" id="min_height" min="120" max="220" required >
+        <span id="min_height_value">120</span> cm
+
+        <script>
+        const minHeightSlider = document.getElementById('min_height');
+        const minHeightValue = document.getElementById('min_height_value');
+
+        minHeightSlider.addEventListener('input', function() {
+        minHeightValue.textContent = minHeightSlider.value;
+        });
+        </script>
+        <br><br>
+
+
+        <!--<label for="min_height">Minimum Height (in cm):</label>
+        <input type="number" name="min_height" id="min_height" required>
+        <br><br> -->
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Delusion Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ADD8E6;
+        }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+        height: 400px;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: #528aeb;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    select,
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <h1>Female Delusion Calculator India</h1>
+    <img src="_cfc28ebe-95e8-4379-a86b-80b91ac63f14.jpg" alt="Calculator Image">
+<form action="/calculate" method="POST">
+    <label for="age_input">Age Group:</label>
+    <select name="age_input" id="age_input">
+        <option value="15-19">15-19</option>
+        <option value="20-24">20-24</option>
+        <option value="25-29">25-29</option>
+        <option value="30-34">30-34</option>
+        <option value="35-39">35-39</option>
+        <option value="40-44">40-44</option>
+        <option value="45-49">45-49</option>
+        <option value="50-54">50-54</option>
+        <option value="55-59">55-59</option>
+        <option value="60-64">60-64</option>
+        <option value="65-69">65-69</option>
+        <option value="70-74">70-74</option>
+        <option value="75-79">75-79</option>
+        <option value="80+">80+</option>
+    </select>
+   
+    <div class="form-group">
+        <input type="checkbox" id="marital_status" name="marital_status" value="exclude_married">
+        <label for="marital_status">Exclude Married</label>
+    </div>
+    
+    <label for="religion_input">Religion:</label>
+    <select name="religion_input" id="religion_input">
+        <option value="Hindu">Hindu</option>
+        <option value="Muslim">Muslim</option>
+        <option value="Christian">Christian</option>
+        <option value="Sikh">Sikh</option>
+        <option value="Buddh">Buddh</option>
+        <option value="Jain">Jain</option>
+        <option value="Other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="wealth_input">Minimum Wealth Status:</label>
+    <select name="wealth_input" id="wealth_input">
+        <option value="Poorest">Poorest</option>
+        <option value="Poorer">Poorer</option>
+        <option value="Middle">Middle</option>
+        <option value="Richer">Richer</option>
+        <option value="Richest">Richest</option>
+    </select>
+    <br><br>
+
+    <label for="min_height">Minimum Height (in cm):</label>
+    <input type="number" name="min_height" id="min_height" required>
+    <br><br>
+
+    <input type="submit" value="Calculate">
+</form>
+</body>
+</html>
